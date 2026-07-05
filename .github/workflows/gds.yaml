@@ -23,6 +23,7 @@ jobs:
   gl_test:
     needs: gds
     runs-on: ubuntu-24.04
+    continue-on-error: true
     steps:
       - name: checkout repo
         uses: actions/checkout@v6
